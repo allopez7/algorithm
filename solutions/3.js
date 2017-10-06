@@ -1,11 +1,11 @@
-const sayHelloTimes = (string, times, str='', i=0) => {
-  if(i === times){
+const sayHelloTimes = (string, times, str='') => {
+  if(0 === times){
     return str;
   }
-  if(i != times){
+  if(times != 0){
     str = str + string + ' ';
   }
-  return sayHelloTimes(string, times, str, i+1);
+  return sayHelloTimes(string, times-1, str);
 
 };
 console.log(sayHelloTimes('hello', 3));
