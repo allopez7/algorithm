@@ -9,3 +9,5 @@ const test = (a, n) =>{
   }
 }
 test('Apple', 5)
+test('Apple', 4);
+test('Apple', 10);
