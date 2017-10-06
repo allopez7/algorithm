@@ -1,17 +1,13 @@
 const solution = require('../solutions/4.js');
 
-const test = (a, n, tester) =>{
-  if(solution(a, n) === `${a} ${a} ${a} ${a} ${a} ` && tester === n){
-    console.log('correct');
-  }else if(solution(a, n) === `${a} ${a} ${a} ${a} ` && tester === n){
-    console.log('correct');
-  }else if(solution(a, n) === `${a} ${a} ${a} ` && tester === n){
+const test = (string, number, tester) =>{
+  if(solution(string, number) === tester){
     console.log('correct');
   }else{
     console.log('incorrect');
   }
 }
-test('Apple', 5, 5)
-test('Apple', 4, 5);
-test('Apple', 3, 3);
-test('Apple', 10);
+test('Apple', 3, 'Apple Apple Apple ');
+test('Yay', 2, 'Yay Yay ');
+test('Lol', 4, 'Lol Lol Lol Lol ');
+
