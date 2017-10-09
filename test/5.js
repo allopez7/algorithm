@@ -1,11 +1,32 @@
-const solution = require('../solutions');
+const solution = require('../solutions/5.js');
 
-const functionCall = (funky, numb, tester)=>{
- if(solution(funky, numb) === tester){
-  console.log('correct'); 
- }else{
-   console.log('incorrect');
- }
+let i = 0;
+const funct = ()=>{
+  i = i + 1 ;
 }
 
-functionCall(funct, 2);
+solution(funct, 5);
+
+if(i === 5){
+  console.log('correct');
+}else{
+  console.log('incorrect');
+}
+
+i=0;
+solution(funct, 10);
+
+if(i === 10){
+  console.log('correct');
+}else{
+  console.log('incorrect');
+}
+
+i=0;
+solution(funct, 15);
+
+if(i === 15){
+  console.log('correct');
+}else{
+  console.log('incorrect');
+}
