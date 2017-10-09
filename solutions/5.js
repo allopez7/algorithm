@@ -2,8 +2,7 @@ const recursionFunct = (funct, num, fun='') =>{
   if(num === 0){
     return fun;
   }
-  fun = fun + funct();
-  return recursionFunct(funct, num-1);
+  return recursionFunct(funct, num-1, fun + funct());
 }
 module.exports = recursionFunct;
 
