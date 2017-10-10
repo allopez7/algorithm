@@ -1,8 +1,8 @@
-const recursionFunct = (funct, num, fun='') =>{
+const recursionFunct = (funct, num) =>{
   if(num === 0){
-    return fun;
+    return;
   }
-  return recursionFunct(funct, num-1, fun + funct());
+  funct();
+  return recursionFunct(funct, num-1);
 }
 module.exports = recursionFunct;
-
