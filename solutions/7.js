@@ -1,4 +1,4 @@
-const getDivisors = (number, i=0, max=0) =>{
+const getDivisors = (number, i=1, max=0) =>{
   if(i === number){
     return max;
   }
