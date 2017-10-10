@@ -1,7 +1,7 @@
-const recursion = (funct, num, i=0)=>{
+const recursion = (funct, num, j=1, i=0)=>{
   if(i != num){
-  funct(num);
-  recursion(funct, num, i+1);
+  funct(j);
+  recursion(funct, num, j+1, i+1);
   }
 }
 module.exports = recursion;
