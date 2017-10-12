@@ -5,4 +5,5 @@ const callFunctionBigger = (funct, num1, num2, i=1)=>{
     funct(i);
   return callFunctionBigger(funct, num1, num2, i+1);
 }
+
 module.exports = callFunctionBigger;
