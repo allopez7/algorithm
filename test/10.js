@@ -26,6 +26,8 @@ const biggerFunction = (numOne, numTwo)=>{
     console.log('incorrect');
   }
 }
-biggerFunction(4,5);
 
+biggerFunction(4,5);
+biggerFunction(10, 13);
+biggerFunction(24, 40);
 
