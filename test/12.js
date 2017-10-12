@@ -7,6 +7,7 @@ const factorialFunky = (num, result)=>{
     console.log('incorrect');
   }
 }
+factorialFunky(0, 1);
 factorialFunky(5,120);
 factorialFunky(6, 720);
 factorialFunky(10, 3628800);
