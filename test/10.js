@@ -5,10 +5,9 @@ const biggerFunction = (numOne, numTwo)=>{
   let passing = true;
   let bigger = 0;
 
-  if(numOne > bigger){
+  if(numOne > numTwo){
     bigger = numOne;
-  }
-  if(numTwo > bigger){
+  }else if(numTwo > numOne){
     bigger = numTwo;
   }
 
