@@ -7,6 +7,6 @@ const tester = (str, ch, test)=>{
     console.log('incorrect');
   }
 }
-tester('hello', 'e', true);
-tester('string', 'r', true);
+tester('Hello', 'o', true);
+tester('String', 'a', true);
 tester('wings', 's', true);
