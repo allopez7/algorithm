@@ -1,15 +1,14 @@
 const check = (num, newArr=[], i=2, j=2)=>{
-  if(j > num){
+  if(i > num){
     return newArr;
   }
   if(i === j){
     newArr.push(i);
-    return check(num, newArr, i+1, j);
+    return check(num, newArr, i+1, j=2);
   }
-  if(j%i === 0){
-    return check(num, newArr, i);
+  if(i%j === 0){
+    return check(num, newArr, i+1, j=2);
   }
   return check(num, newArr, i, j+1);
 }
-console.log(check(100));
-//module.exports = isPrime;
+module.exports = check;

@@ -1,17 +1,18 @@
 const solution = require('../solutions/14.js');
 
-const tester = (upTo, i=2)=>{
+const tester = (upTo, i=0)=>{
   if(i > upTo){
     return;
   }
-  if(solution(i)){
-    console.log(i+' is prime');
+  console.log(solution(upTo)[i]);
+    /*
+  if(solution(upTo) === i){
+    console.log(i+' correct');
   }else{
-    console.log(i+' is not prime');
+    console.log(i+' incorrect');
   }
-  return tester(upTo, i+1);
+  */
+  return tester(upTo, i+1); 
 }
 
-tester(100);
-tester(50);
-tester(20);
+tester(17);
