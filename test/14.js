@@ -1,20 +1,10 @@
 const solution = require('../solutions/14.js');
 
-const helper = (ar, ar1, i=0)=>{
-  if(i === ar.length){
-    return true;
-  }
-  if(ar[i] != ar1[i]){
-    return false;
-  }
-  return helper(ar, ar1, i+1);
-}
-const tester = (upTo, result)=>{
-  const newArr = solution(upTo);
-  if(helper(newArr,result)){
-    console.log('prime');
+const tester = (num, result)=>{
+  if(solution(num).toString() === result.toString()){
+    console.log('correct');
   }else{
-    console.log('not prime');
+    console.log('incorrect');
   }
 }
 
