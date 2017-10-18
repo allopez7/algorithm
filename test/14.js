@@ -2,9 +2,9 @@ const solution = require('../solutions/14.js');
 
 const tester = (num, result)=>{
   if(solution(num).toString() === result.toString()){
-    console.log('correct');
+    console.log('prime');
   }else{
-    console.log('incorrect');
+    console.log('not prime');
   }
 }
 
