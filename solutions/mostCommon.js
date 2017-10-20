@@ -26,5 +26,4 @@ const common = (arr)=>{
   const obj = buildMap(arr);
   return maxVal(obj, Object.keys(obj));
 }
-//console.log(common([1,1,1,1,10,2,30,2,3,3,3]))
 module.exports = common;
