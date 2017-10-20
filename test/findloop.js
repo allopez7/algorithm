@@ -1,6 +1,5 @@
 const solution = require('../solutions/findloop.js');
 
-//const obj ={val:2,next:{val:3,next:{val:4,next:{val:5}}}}; 
 const d = {val:4};
 const c = {val:3, next:d};
 const b = {val:2, next:c};
