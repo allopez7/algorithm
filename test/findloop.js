@@ -12,6 +12,12 @@ const f = {val:2, next:g};
 const e = {val:1, next:f};
 h.next = e;
 
+const j = {val:4};
+j.next = j;
+
+const i = {val:0};
+i.next = null;
+
 const findIfLoops = (object)=>{
   if(solution(object, object)){
    console.log('does loop'); 
@@ -21,4 +27,5 @@ const findIfLoops = (object)=>{
 }
 findIfLoops(a);
 findIfLoops(e);
-
+findIfLoops(j);
+findIfLoops(i);
