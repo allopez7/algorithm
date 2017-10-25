@@ -3,12 +3,12 @@ const tree = {
   children:[{val:2,children:[]},{val:3,children:[]}]
 }
 
-const bfs = (lev=[],printLev=0)=>{
+const bfs = (lev=[])=>{
   if(!lev.length){
-    return printLev;
+    return;
   }
   n = lev.shift();
   console.log(n.val);
-  return bfs(lev.concat(n.children),printLev);
+  return bfs(lev.concat(n.children));
 }
 bfs([tree]);
