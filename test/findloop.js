@@ -1,10 +1,9 @@
 const solution = require('../solutions/findloop.js');
 
-const d = {val:4};
+const d = {val:4, next: null};
 const c = {val:3, next:d};
 const b = {val:2, next:c};
 const a = {val:1, next:b};
-d.next = null;
 
 const h = {val:4};
 const g = {val:3, next:h};
@@ -15,11 +14,8 @@ h.next = e;
 const j = {val:4};
 j.next = j;
 
-const i = {val:0};
-i.next = null;
-
 const findIfLoops = (object)=>{
-  if(solution(object, object)){
+  if(solution(object)){
    console.log('does loop'); 
   }else{
    console.log('does not loop');
@@ -28,4 +24,3 @@ const findIfLoops = (object)=>{
 findIfLoops(a);
 findIfLoops(e);
 findIfLoops(j);
-findIfLoops(i);

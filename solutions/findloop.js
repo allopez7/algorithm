@@ -1,4 +1,4 @@
-const findLoop = (obj, current)=>{
+const findLoop = (obj, current=obj)=>{
   if(obj.next === current){
     return true;
   }
