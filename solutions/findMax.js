@@ -1,4 +1,4 @@
-const node = (linkedList, max=0)=>{
+const node = (linkedList, max=Number.NEGATIVE_INFINITY)=>{
   if(linkedList === null){
     return max;
   }
