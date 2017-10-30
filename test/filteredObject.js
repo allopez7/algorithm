@@ -1,12 +1,28 @@
 const solution = require('../solutions/filteredObject.js');
 
-const objA = {                                                                 '5':"blah blah",
-  'name': "ho",                                                                'zolo': "4thech"                                                        
+const objA = {
+  '5':"blah blah",
+  'name': "ho",
+  'zolo': "4thech"
+}
+
+const objA1 = {
+  'town': "san jose",
+  'neighborhood': "downtown"
+}
+
+const objA2 = {
+  'stones': "row",
+  'microphone': "stage"
 }
 
 const funct = (k, v, objectC={}, i=0)=>{
   if(i === k.length){
-    return objectC;                                                          }                                                                              if(v[i].length > 3){                                                              objectC[k[i]]=v[i];                                                         }
+    return objectC;
+  }
+  if(v[i].length > 3){
+    objectC[k[i]]=v[i];
+  }
   return funct(k, v, objectC, i+1);
 }
 
@@ -22,4 +38,6 @@ const test = (object, functions, result, i=0)=>{
   return test(object, functions, result, i+1);
 
 }
-test(objA, funct,{'5':"bl", 'zolo':"4thech"});
+test(objA, funct,{'5':"blah blah", 'zolo':"4thech"});
+test(objA1, funct,{'5':"bl", 'zolo':"4thech"});
+test(objA2, funct,{'stones':"row", 'microphone':"stage"});
